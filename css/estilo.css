@@ -1,0 +1,21 @@
+body {
+  background-color: tomato; }
+  body header {
+    background-color: violet;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    body header h1 {
+      margin: 15px; }
+    body header nav {
+      font-weight: bold;
+      text-transform: uppercase; }
+    body header li {
+      display: inline-block; }
+    body header a {
+      text-decoration: none;
+      margin: 15px;
+      font-size: 1rem;
+      color: green; }
+      body header a:hover {
+        color: white; }

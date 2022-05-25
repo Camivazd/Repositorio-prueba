@@ -1,0 +1,40 @@
+//para importar páginas
+@import "variables";
+
+body{
+    background-color:tomato;
+
+    header{ //esto es anidar selectores
+        background-color: violet;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h1{
+            margin: 15px;
+        }
+
+        nav{
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        li{
+            display: inline-block;
+        }
+
+        a{
+            text-decoration: none;
+            margin: 15px;
+            font-size: $tam-letra - 1rem; //acá puedo hacer calculos matemáticos a la variable aplicada, 
+            //siempre tiene que tener el mismo valor, ej: rem y rem, px y ox, etc.
+            color: $color-texto;
+
+            //Apersom "&", esto se usa abajo del elemento que quiero modificar, como darle una pseudoclase
+            &:hover{
+                color: white;
+            }
+
+        }
+    }
+}
