@@ -1,0 +1,25 @@
+//Bucles
+@for $i from 2 to 7{
+     h#{$i} {
+         font-size: $i * 2rem;
+     }
+}
+
+//To - termina en el valor anterior. 
+// Through - termina en el mismo valor indicado.
+
+
+//Bucles de listas:
+//Variable - contiene un valor. 
+//Lista - es una variable que contiene varios valores.
+$colores: "pink", "violet", "tomato";
+
+@each $color in $colores{
+    .#{$color}{
+        color: #{$color};
+    }
+}
+
+
+
+

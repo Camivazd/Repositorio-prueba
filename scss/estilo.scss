@@ -1,8 +1,13 @@
 //para importar páginas
 @import "variables";
+@import "condicionales";
+@import "bucles";
+@import "maps";
+@import "extend";
+@import "mixin";
 
 body{
-    background-color:tomato;
+    
 
     header{ //esto es anidar selectores
         background-color: violet;

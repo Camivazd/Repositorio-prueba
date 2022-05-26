@@ -1,0 +1,22 @@
+/*Condicionales*/
+$vista: cami;
+
+/*@if ($vista == escritorio){
+     body{
+         background-color: yellowgreen;
+     }
+}@else {
+    body{
+        background-color: blue;
+    }
+}*/
+
+//También se puede hacer de esta manera
+body{
+    @if ($vista == escritorio){
+        background-color: yellowgreen;
+    }@else{ 
+        background-color: blue;
+    }
+
+}

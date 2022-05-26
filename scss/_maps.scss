@@ -1,0 +1,16 @@
+//Maps - almacena una collección de variables.
+$mapRedes: (facebook:red, instagram: violet, twitter: blue);
+
+@each $redes, $color in $mapRedes{
+    .#{$redes} {
+        color: $color;
+    }
+}
+
+//Mapa-Get
+$estilo: (color:pink, TamFuente: 2rem);
+
+.clase{
+    background-color: map-get($estilo, color);
+    font-size: map-get($estilo, TamFuente);
+}

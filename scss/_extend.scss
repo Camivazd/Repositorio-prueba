@@ -1,0 +1,12 @@
+//Extend
+.primerEstilo{
+    font-size: 1.50rem;
+    text-align: center;
+    font-weight: bold;
+    color: blue;
+}
+
+.segundoEstilo{
+    @extend .primerEstilo;
+    text-decoration: underline;
+}

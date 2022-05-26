@@ -1,0 +1,25 @@
+//Mixin
+
+//Mixin sin parámetros
+@mixin parrafos {
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: underline;
+    font-size: 12px;
+    text-align: center;   
+}
+
+//Lo llamo de esta manera:
+.parrafosConEstilos{
+    @include parrafos;
+}
+
+
+//Mixin con parámetros
+@mixin parrafosConParametros($size,$alineacion){
+    font-size: $size;
+    text-align: $alineacion;
+}
+
+.parrafosConHambre {
+    @include parrafosConParametros(14px, center)
+}
